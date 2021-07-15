@@ -2,5 +2,5 @@ base:          # Apply SLS files from the directory root for the 'base' environm
   '*':      # All minions with a minion_id that begins with 'dev'
     - commons   # Apply the state file named 'common.sls'
 dev:
-  '*dev*':
+  'minion1':
     - commons
